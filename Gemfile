@@ -7,6 +7,8 @@ gem "font-awesome-rails"
 
 gem 'simple_form'
 
+gem 'devise' 
+
 ruby '2.5.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
