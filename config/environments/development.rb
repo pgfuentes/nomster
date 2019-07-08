@@ -1,4 +1,4 @@
-Rails.application.configure 
+Rails.application.configure do
 config.action_mailer.default_url_options = { host: 'nomster-pierre-fuentes.herokuapp.com' }
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -59,4 +59,4 @@ config.action_mailer.default_url_options = { host: 'nomster-pierre-fuentes.herok
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-do
+end
