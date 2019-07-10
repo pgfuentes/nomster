@@ -15,8 +15,9 @@ class PlacesController < ApplicationController
   end
 
   def show
-    @place = Place.find(params[:id])
-  end
+  @place = Place.find(params[:id])
+  @comment = Comment.new
+end
 
   def create
   @place = current_user.places.create(place_params)
