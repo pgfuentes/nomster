@@ -5,6 +5,10 @@ gem "font-awesome-rails"
 
 gem "font-awesome-rails"
 
+gem "geocoder"
+
+gem "figaro"
+
 gem 'simple_form'
 
 gem 'devise' 
