@@ -38,10 +38,14 @@ blockquote p {
     clear: both;
 }
 
-#map {
-      height: 300px;
+ html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
     }
-
+    #map {
+      height: 300%;
+      }
 
 
   .invalid-feedback {
