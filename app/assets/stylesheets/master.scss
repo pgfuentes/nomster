@@ -38,6 +38,11 @@ blockquote p {
   box-shadow: 0px 3px 8px #2a2a2a;
 }
 
+#map {
+  height: 300px;
+
+}
+
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
   height: 550px;
   width: 100%;
@@ -60,9 +65,6 @@ blockquote p {
 }
 
  
-    #map {
-      height: 300%;
-      }
 
 
   .invalid-feedback {

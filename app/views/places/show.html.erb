@@ -4,6 +4,7 @@
   <br/><br/>
   <p><%= @place.description %></p>
 
+
   <% if @place.latitude.present? && @place.longitude.present? %>
 
   
@@ -26,7 +27,7 @@
   </script>
 
   <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCorF1MLkq1amnmjVyL7G1u8ZWVZ3lGbnY&callback=initMap">
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHED5ppeZUL8dGu5rjwNim30TlEy-xnfg&callback=initMap">
   </script>
 
   <div id="map"></div>
@@ -52,7 +53,7 @@
       <% if photo.caption.present? %>
         <b><%= photo.caption %></b> -
       <% end %>
-      <%= image_tag photo.picture, class: 'img-fluid' %>
+      <%= image_tag photo.picture.to_s, class: 'img-fluid' %>
   </div>
 <% end %>
 </div>
