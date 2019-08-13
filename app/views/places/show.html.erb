@@ -48,7 +48,7 @@
 <h1>Comments</h1>
 
 <div class="row">
-  <% @place.photos.each do |comment| %>
+  <% @place.photos.each do |photo| %>
  <div class="col-12 col-sm-6">
       <% if photo.caption.present? %>
         <b><%= photo.caption %></b> -
@@ -58,7 +58,15 @@
 <% end %>
 </div>
 
-
+<% @place.comments.each do |comment| %>
+  <div>
+    <blockquote>
+      <b><%= comment.rating %></b> -
+        <%= comment.message %>
+      <small><%= comment.user.email %></small>
+    </blockquote>
+  </div>
+<% end %>
 
 
 <!-- Button trigger modal -->
