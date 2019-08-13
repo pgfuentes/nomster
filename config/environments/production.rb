@@ -11,7 +11,7 @@ Rails.application.configure do
   }
 
 
-config.action_mailer.default_url_options = { host: 'nomster-pierre-fuentes.herokuapp.com' },
+
   
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -76,7 +76,7 @@ config.action_mailer.default_url_options = { host: 'nomster-pierre-fuentes.herok
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "nomster_#{Rails.env}"
-
+config.action_mailer.default_url_options = { host: 'nomster-pierre-fuentes.herokuapp.com' }
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.
